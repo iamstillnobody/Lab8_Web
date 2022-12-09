@@ -68,6 +68,7 @@ class Database {
         $query = "SELECT * FROM categories";
         $result = $this->db->query($query);
 
+
         while ($row = $result->fetch_array(MYSQLI_ASSOC))
             array_push($categories, $row['category']);
 
